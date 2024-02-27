@@ -11,7 +11,9 @@ open class Delivery {     // Inheritance Class
                         Thread.sleep(1000)
                     }
                     println("Makananmu Sudah Siap! Silakan Ambil di Resto!")
-                    Thread.sleep(5000)
+                    for (i in 5 downTo 1) {
+                        Thread.sleep(1000)
+                    }
                     println("Pesanan Selesai!")
                     Thread.sleep(3000)
                 }
@@ -25,7 +27,6 @@ open class Delivery {     // Inheritance Class
                     }
                     println("Makananmu Sudah Siap! Driver Segera Menuju Tempatmu!")
                     for (i in 5 downTo 1) {
-                        println(i)
                         Thread.sleep(1000)
                     }
                     println("Pesanan Selesai!")
